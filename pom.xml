@@ -2,12 +2,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>manning</groupId>
-	<artifactId>Basic_Struts2_Mvn</artifactId>
+	<artifactId>struts_app</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Basic Struts 2</name>
+	<name>struts_app</name>
 	<build>
-		<finalName>Basic_Struts2_Mvn</finalName>
+		<finalName>struts_app</finalName>
 	</build>
 	<dependencies>
 

@@ -4,8 +4,8 @@ public class MessageStore {
 	
 	private String message;
 
-	public MessageStore() {
-		setMessage("Hey you, look at this.");
+	public MessageStore(String message) {
+		setMessage(message);
 	}
 
 	public String getMessage() {

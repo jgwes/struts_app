@@ -9,11 +9,11 @@ public class MessageController extends ActionSupport {
 	private static final long serialVersionUID = 1L;
 
 	private MessageStore messageStore;
-	private int messageCount;
+	private int messageCount = 0;
 
 	public String execute() throws Exception {
-		messageStore = new MessageStore();
 		messageCount++;
+		messageStore = new MessageStore("Hey you, look at this.");
 		return SUCCESS;
 	}
 

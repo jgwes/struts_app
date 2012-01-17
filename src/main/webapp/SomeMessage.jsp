@@ -8,6 +8,7 @@
 <title>Guten Abend!</title>
 </head>
 <body>
-	<hd><s:property value="messageStore.message" /></h2>
+	<h2><s:property value="messageStore.message" /></h2>
+	<p>This message has been accessed <s:property value="messageCount" /> times...</p>
 </body>
 </html>

@@ -9,6 +9,27 @@
 </head>
 <body>
 <h1>Guten Morgen!</h1>
-<p><a href="<s:url action='talktome'/>">Bringen sie mir der speisekarte, bitte!</a></p>
+<p>
+
+<!-- First example, url tag embedded in href tag-->
+<a href="<s:url action='talktome'/>">Bringen sie mir der speisekarte, bitte!</a></p>
+
+
+<!-- url action tag with parameter -->
+<s:url action="talktome" var="talktomelink">
+	<s:param name="userName">Ruth Olivia Westerman</s:param>
+</s:url>
+
+<!-- href tag references url action tag via var name -->
+<p><a href="${talktomelink}">Hello Ruth Olivia!!!</a></p>
+
+<!-- form starts here, submits to same action -->
+<p>For personal hello, fill out his form.</p>
+<s:form action="talktome">
+	<s:textfield name="userName" label="Your name" />
+	<s:submit value="Submit" />
+</s:form>
+
+
 </body>
 </html>

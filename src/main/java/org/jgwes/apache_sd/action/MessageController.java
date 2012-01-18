@@ -9,7 +9,7 @@ public class MessageController extends ActionSupport {
 	private static final long serialVersionUID = 1L;
 
 	private MessageStore messageStore;
-	private int messageCount = 0;
+	private static int messageCount;
 
 	public String execute() throws Exception {
 		messageCount++;
